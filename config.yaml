@@ -1,0 +1,81 @@
+# FLEET CONFIG =================================================================
+# RMF Fleet parameters
+
+rmf_fleet:
+  name: "Otto1500"
+  limits:
+    linear: [2.0, 1.2] # velocity, acceleration
+    angular: [0.7, 0.7] # velocity, acceleration
+  profile: # Robot profile is modelled as a circle
+    footprint: 0.5 # radius in m
+    vicinity: 0.6 # radius in m
+  reversible: False # whether robots in this fleet can reverse
+  battery_system:
+    voltage: 24.0 # V
+    capacity: 40.0 # Ahr
+    charging_current: 26.4 # A
+  mechanical_system:
+    mass: 80.0 # kg
+    moment_of_inertia: 20.0 #kgm^2
+    friction_coefficient: 0.20
+  ambient_system:
+    power: 20.0 # W
+  tool_system:
+    power: 50.0 # W
+  recharge_threshold: 0.10 # Battery level below which robots in this fleet will not operate
+  recharge_soc: 1.0 # Battery level to which robots in this fleet should be charged up to during recharging tasks
+  publish_fleet_state: True
+  account_for_battery_drain: True
+  task_capabilities: # Specify the types of RMF Tasks that robots in this fleet are capable of performing
+    loop: True
+    delivery: True
+    clean: False
+    finishing_request: "nothing" # [park, charge, nothing]
+
+# ROBOT CONFIG =================================================================
+
+robots:
+  # Here the user is expected to append the configuration for each robot in the
+  # fleet.
+  # Configuration for first robot in this fleet
+  robot_1:
+    robot_config:
+      filter_waypoints: True
+      max_delay: 100000.0 # allowed seconds of delay of the current itinerary before it gets interrupted and replanned
+    rmf_config:
+      start:
+        map_name: "L1" # the level name as defined in traffic_editor that the robot is starting on
+      charger:
+        waypoint: "charger_otto1000_1"
+  robot_2:
+    robot_config:
+      filter_waypoints: True
+      max_delay: 100000.0 # allowed seconds of delay of the current itinerary before it gets interrupted and replanned
+    rmf_config:
+      start:
+        map_name: "L1" # the level name as defined in traffic_editor that the robot is starting on
+      charger:
+        waypoint: "charger_otto1000_2"
+  robot_3:
+    robot_config:
+      filter_waypoints: True
+      max_delay: 100000.0 # allowed seconds of delay of the current itinerary before it gets interrupted and replanned
+    rmf_config:
+      start:
+        map_name: "L1" # the level name as defined in traffic_editor that the robot is starting on
+      charger:
+        waypoint: "charger_otto1000_3"
+
+# TRANSFORM CONFIG =============================================================
+# For computing transforms between Robot and RMF coordinate systems
+
+rmf_to_robot_transformation:
+  rotation: 0.0
+  scale: 1.2504164209780637
+  trans_x: -142.8728426330461
+  trans_y: 123.66709935598917
+robot_to_rmf_transformation:
+  rotation: 0.0
+  scale: 0.7997328493216024
+  trans_x: 114.27146490650718
+  trans_y: -98.8964868512317

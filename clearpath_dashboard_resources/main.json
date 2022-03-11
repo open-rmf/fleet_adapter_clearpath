@@ -1,0 +1,21 @@
+{
+  "dispensers":{
+  },
+  "robots":{
+    "Otto":{
+      "icons":{
+        "Otto":"/robots/otto1500/otto1500.png"
+      },
+      "places":{
+
+      }
+    }
+  },
+  "logos":{
+    "headerLogo":{
+      "icons":{
+        "headerLogo":"/logos/header/headerLogo.png"
+      }
+    }
+  }
+}
