@@ -17,7 +17,7 @@ cd ~/rmf_ws
 rosdep install --from-paths src --ignore-src --rosdistro foxy -yr
 source /opt/ros/foxy/setup.bash
 source /opt/clearpath/ros2-api-1.3.3-0/setup.bash # or wherever the clearpath api is located
-colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --packages-up-to rmf_demos_clearpath
+colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --packages-up-to fleet_adapter_clearpath
 
 ```
 
