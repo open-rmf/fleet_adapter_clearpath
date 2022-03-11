@@ -12,7 +12,7 @@ Install all necessary dependencies but do not run the `colcon build..` step yet.
 Next clone in this repository into the same workspace
 ```bash
 cd ~/rmf_ws/src
-git clone git@github.com:osrf/fleet_adapter_clearpath.git
+git clone https://github.com/open-rmf/fleet_adapter_clearpath.git
 cd ~/rmf_ws
 rosdep install --from-paths src --ignore-src --rosdistro foxy -yr
 source /opt/ros/foxy/setup.bash
