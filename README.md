@@ -1,5 +1,6 @@
 # fleet_adapter_clearpath
-An open source fleet adapter for integrating Otto robots with Open-RMF
+An open source fleet adapter for integrating Otto robots with Open-RMF.
+This adapter communicates with the robots over ROS 2 topics and actions.
 
 ![](docs/fleet_adapter_clearpath.png)
 
