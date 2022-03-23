@@ -1,8 +1,12 @@
+
 # fleet_adapter_clearpath
-An open source fleet adapter for integrating Otto robots with Open-RMF.
+An open source fleet adapter for integrating OTTO robots with Open-RMF.
 This adapter communicates with the robots over ROS 2 topics and actions.
 
 ![](docs/fleet_adapter_clearpath.png)
+
+## Description
+This package implements a OTTO robot command handle that is managed by a C++ RMF Adapter. It can be used to control fleets of OTTO robots. 
 
 ## Requirements
 * ROS 2 Foxy
@@ -30,3 +34,9 @@ ros2 run fleet_adapter_clearpath fleet_adapter --ros-args -p nav_graph_file:=NAV
 ```
 
 [Sample config file](config.yaml)
+
+
+## Support
+If you need support on RMF (e.g. bug reports, feature requests), you can find our support guidelines [here](https://openrmf.readthedocs.io/en/latest/support/index.html).
+
+For support related to OTTO Motors robots or the Clearpath ROS2 API, contact a person at [OTTO Motors](https://ottomotors.com/).
