@@ -1,21 +1,33 @@
 {
-  "dispensers":{
-  },
-  "robots":{
-    "Otto":{
-      "icons":{
-        "Otto":"/robots/otto1500/otto1500.png"
-      },
-      "places":{
-
-      }
+    "dispensers":{ },
+    "robots":{
+        "OTTO-1500":{
+            "icons":{
+                "OTTO-1500":"/robots/otto1500.png"
+            }
+        },
+        "OTTO-100":{
+            "icons":{
+                "OTTO-100":"/robots/otto100.png"
+            }
+        },
+        "OTTO-750":{
+            "icons":{
+                "OTTO-750":"/robots/otto750.png"
+            }
+        },
+        "OTTO-LIFTER":{
+            "icons":{
+                "OTTO-LIFTER":"/robots/otto_lifter.png"
+            }
+        }
+    },
+    "places":{ },
+    "logos":{
+        "headerLogo":{
+            "icons":{
+                "headerLogo":"/logos/header/headerLogo.png"
+            }
+        }
     }
-  },
-  "logos":{
-    "headerLogo":{
-      "icons":{
-        "headerLogo":"/logos/header/headerLogo.png"
-      }
-    }
-  }
 }

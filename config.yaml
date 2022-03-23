@@ -2,7 +2,7 @@
 # RMF Fleet parameters
 
 rmf_fleet:
-  name: "Otto1500"
+  name: "OTTO-1500"
   limits:
     linear: [2.0, 1.2] # velocity, acceleration
     angular: [0.7, 0.7] # velocity, acceleration
@@ -22,8 +22,8 @@ rmf_fleet:
     power: 20.0 # W
   tool_system:
     power: 50.0 # W
-  recharge_threshold: 0.10 # Battery level below which robots in this fleet will not operate
-  recharge_soc: 1.0 # Battery level to which robots in this fleet should be charged up to during recharging tasks
+  recharge_threshold: 0.30 # Battery level below which robots in this fleet will not operate
+  recharge_soc: 0.85 # Battery level to which robots in this fleet should be charged up to during recharging tasks
   publish_fleet_state: True
   account_for_battery_drain: True
   task_capabilities: # Specify the types of RMF Tasks that robots in this fleet are capable of performing
@@ -46,7 +46,7 @@ robots:
       start:
         map_name: "L1" # the level name as defined in traffic_editor that the robot is starting on
       charger:
-        waypoint: "charger_otto1000_1"
+        waypoint: "charger_otto1500_1"
   robot_2:
     robot_config:
       filter_waypoints: True
@@ -55,7 +55,7 @@ robots:
       start:
         map_name: "L1" # the level name as defined in traffic_editor that the robot is starting on
       charger:
-        waypoint: "charger_otto1000_2"
+        waypoint: "charger_otto1500_2"
   robot_3:
     robot_config:
       filter_waypoints: True
@@ -64,7 +64,7 @@ robots:
       start:
         map_name: "L1" # the level name as defined in traffic_editor that the robot is starting on
       charger:
-        waypoint: "charger_otto1000_3"
+        waypoint: "charger_otto1500_3"
 
 # TRANSFORM CONFIG =============================================================
 # For computing transforms between Robot and RMF coordinate systems
